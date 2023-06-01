@@ -6,6 +6,7 @@ body#acceuil{
     background-image:url(img/background.jpg);
     background-size: cover;
 }
+/*menu*/
 nav{
     background-color: grey;
     display: none;
@@ -68,6 +69,7 @@ a:link{
 #contact:hover{
     background-color:magenta;
 }
+/*acceuil*/
 #center{
     height: 30em;
     width: 100%;
@@ -81,6 +83,7 @@ a:link{
     background-size:contain;
     background-position: center;
 }
+/*retex*/
 #retex-content{
     display: flex;
     flex-direction: column;
@@ -141,16 +144,48 @@ a:link{
 p{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+/*parcours*/
+.ligne_droite{
+    display: flex;
+    flex-direction: row;
+}
+.ligne_droite > img{
+    margin-top: 5%;
+    width: 40%;
+    height: 90%;
+}
+.ligne_gauche{
+    display: flex;
+    flex-direction:row-reverse;
+}
+.ligne_gauche > img{
+    width: 40%;
+    height: 70%;
+}
 #Parcours-content{
-    margin-top: 5%
+    margin-top: 2%;
+    height: 70%;
 }
 .school > img{
-    height : 1em;
+    height :60%;
+    width: 70%;
 }
-#Parcours-content > img{
-    width: 90em;
-    height: 13em;
+.school_right{
+    display: flex;
+    flex-direction: column;
+    margin-left: 90%;
+    text-align: center;
 }
+.school_right > img{
+    height :60%;
+    width: 100%;
+}
+.school{
+    width: 20%;
+    height: 10%;
+    text-align: center;
+}
+
 #pdf{
     display: flex;
     height: 5%;
