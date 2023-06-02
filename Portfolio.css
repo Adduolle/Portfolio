@@ -239,9 +239,39 @@ p{
     width: 20%;
     height: 20%;
 }
-
+/*Compétence*/
+#Comp-Content{
+    display: flex;
+    flex-direction: row;
+}
+#Comp-Content .partie{
+    display: flex;
+    flex-direction: column;
+    margin:2%;
+    width: 30%;
+}
+#Comp-Content .partie h1{
+    align-self: center;
+    border-radius:1em;
+    padding: 0.2em;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.Bloc{
+    display: flex;
+    flex-wrap:wrap;
+    background-color: grey;
+    border-radius: 4em;
+    padding: 6%;
+}
+.Bloc img{
+    width: 45%;
+    height: fit-content;
+    margin: 2.5%;
+}
 /*pour télephone*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 512px) {
     nav{
         flex-direction: column;
         width: 30%;
@@ -335,4 +365,14 @@ p{
         width:100%;
         display: block;
     }
+    /*Compétence*/
+    #Comp-Content{
+        flex-direction: column;
+    }
+    #Comp-Content .partie{
+    display: flex;
+    flex-direction: column;
+    margin:2%;
+    width: 90%;
+}
 }
