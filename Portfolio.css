@@ -104,6 +104,7 @@ a:link{
     padding: 0.1em;
     background-color: black;
     color: white;
+    text-align: center;
 }
 .text-retex{
     width: 44%;
@@ -188,6 +189,9 @@ p{
     height: 10%;
     text-align: center;
 }
+.fleche-tel{
+    display: none;
+}
 /*contact*/
 #contacte{
     display: flex;
@@ -231,11 +235,11 @@ p{
 }
 #Contact-content > img{
     margin-left: 10%;
-    margin-top: 7%;
-    margin-bottom: 7%;
+    align-self: center;
     width: 20%;
     height: 20%;
 }
+
 /*pour télephone*/
 @media screen and (max-width: 480px) {
     nav{
@@ -299,10 +303,36 @@ p{
         margin: 0;
     }
     #lien img{
-        width: 30%;
+        width: 10%;
     }
     #lien{
         padding: 0;
         border-radius: 5em;
+    }
+    /*parcours*/
+    .fleche-normal{
+        display: none;
+    }
+    .school_right{
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .school_right img{
+        width: 10%;
+    }
+    .ligne_droite{
+        justify-content: center;
+    }
+    .ligne_gauche{
+        justify-content: center;
+    }
+    .school{
+        width: 80%;
+    }
+    .fleche-tel{
+        width:100%;
+        display: block;
     }
 }
