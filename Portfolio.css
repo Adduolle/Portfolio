@@ -1,3 +1,5 @@
+
+/*fond*/
 body.autre{
     background-image:url(img/pexels-fwstudio-129731.jpg);
     background-size: cover;
@@ -224,11 +226,83 @@ p{
     flex-direction: row;
     align-items: center;
 }
-
+#lien h2{
+    color: darkblue;
+}
 #Contact-content > img{
     margin-left: 10%;
     margin-top: 7%;
     margin-bottom: 7%;
     width: 20%;
     height: 20%;
+}
+/*pour télephone*/
+@media screen and (max-width: 480px) {
+    nav{
+        flex-direction: column;
+        width: 30%;
+        height: 100%;
+    }
+    #menu-icon2{
+        height: auto;
+        width: 50%;
+    }
+    .bouton{
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+    body.autre{
+        background-size:cover;
+    }
+    body#acceuil{
+        background-size:400%
+    }
+    /*acceuil*/
+    #center{
+        margin-top: 40%;
+    }
+    /*retex*/
+    .type1{
+        flex-direction: column-reverse;
+    }
+    
+    .type2{
+        display: flex;
+        flex-direction:column-reverse;
+    }
+    #retex-content img{
+        width: 80%;
+    }
+    .text-retex{
+        width: 80%;
+        margin-top:5%;
+    }
+    #retex-content img:hover{
+        -ms-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+    /*contact*/
+    #Contact-content{
+        flex-direction:column-reverse;
+    }
+    #Contact-content > img{
+        align-self: center;
+        margin:0;
+        margin-bottom: 10%;
+        width: 40%;
+    }
+    #lien a{
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        margin: 0;
+    }
+    #lien img{
+        width: 30%;
+    }
+    #lien{
+        padding: 0;
+        border-radius: 5em;
+    }
 }
