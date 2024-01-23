@@ -267,9 +267,18 @@ p{
     padding: 6%;
 }
 .Bloc img{
-    width: 45%;
+    align-self: center;
+    width: 100%;
     height: fit-content;
-    margin: 2.5%;
+}
+.Bloc div{
+    flex-direction: column;
+    display: flex;
+    max-width: 50%;
+}
+.Bloc p{
+    text-align: center;
+    color: white;
 }
 /*pour télephone*/
 @media screen and (max-width: 512px) {
@@ -375,5 +384,7 @@ p{
     flex-direction: column;
     margin:2%;
     width: 90%;
+    overflow-y:scroll;
+    overflow: hidden;
     }
 }
